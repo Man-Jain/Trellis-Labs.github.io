@@ -23,11 +23,21 @@
 
   <link rel="stylesheet" href="css/aos.css">
 
+  <link rel="stylesheet" href="css/loading.css">
+
   <link rel="stylesheet" href="css/style.css">
 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+  <script>
+    $(window).load(function () {
+      $(".se-pre-con").fadeOut("slow");;
+    });
+  </script>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <div class="se-pre-con"></div>
 
   <div class="site-wrap" id="home-section">
 
